@@ -86,8 +86,9 @@ const PublicFooter: React.FC = () => {
                                 </li>
                             </ul>
                             <a
-                                href="/join"
-                                onClick={(e) => { e.preventDefault(); navigate('/join'); }}
+                                href="https://forms.gle/f86UXjTiusatMUVd7"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold py-2.5 px-5 rounded-xl transition-all shadow-sm text-center cursor-pointer"
                             >
                                 Join UDF (Apply Online)
@@ -108,8 +109,9 @@ const PublicFooter: React.FC = () => {
                                     Contact Our Team
                                 </a>
                                 <a
-                                    href="/join"
-                                    onClick={(e) => { e.preventDefault(); navigate('/join'); }}
+                                    href="https://forms.gle/f86UXjTiusatMUVd7"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold py-2.5 px-5 rounded-xl transition-all shadow-sm text-center block cursor-pointer"
                                 >
                                     Join UDF (Apply Online)
