@@ -85,12 +85,13 @@ const PublicFooter: React.FC = () => {
                                     <span>{webConfig?.contactEmail || "info@udfonline.in"}</span>
                                 </li>
                             </ul>
-                            <button
-                                onClick={() => navigate('/join')}
-                                className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold py-2.5 px-5 rounded-xl transition-all shadow-sm text-center"
+                            <a
+                                href="/join"
+                                onClick={(e) => { e.preventDefault(); navigate('/join'); }}
+                                className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold py-2.5 px-5 rounded-xl transition-all shadow-sm text-center cursor-pointer"
                             >
                                 Join UDF (Apply Online)
-                            </button>
+                            </a>
                         </div>
                     ) : (
                         <div>
@@ -99,18 +100,20 @@ const PublicFooter: React.FC = () => {
                                 Have questions about our security services, recruiting process, or guard verification?
                             </p>
                             <div className="flex flex-wrap gap-3">
-                                <button
-                                    onClick={() => navigate('/contact')}
-                                    className="bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold py-2.5 px-5 rounded-xl transition-all shadow-sm"
+                                <a
+                                    href="/contact"
+                                    onClick={(e) => { e.preventDefault(); navigate('/contact'); }}
+                                    className="bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold py-2.5 px-5 rounded-xl transition-all shadow-sm cursor-pointer inline-flex items-center"
                                 >
                                     Contact Our Team
-                                </button>
-                                <button
-                                    onClick={() => navigate('/join')}
-                                    className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold py-2.5 px-5 rounded-xl transition-all shadow-sm text-center block"
+                                </a>
+                                <a
+                                    href="/join"
+                                    onClick={(e) => { e.preventDefault(); navigate('/join'); }}
+                                    className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold py-2.5 px-5 rounded-xl transition-all shadow-sm text-center block cursor-pointer"
                                 >
                                     Join UDF (Apply Online)
-                                </button>
+                                </a>
                             </div>
                         </div>
                     )}
